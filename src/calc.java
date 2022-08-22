@@ -9,7 +9,9 @@ public class calc {
         String Numbers = s.nextLine();
         String[] nums = Numbers.split(" ");
 
-        if((Objects.equals(nums[0], "1") || Objects.equals(nums[0], "2") || Objects.equals(nums[0], "3") || Objects.equals(nums[0], "4")
+        if (nums.length > 3) throw new Exception("Слишком длинная запись выражения (калькулятор работает только с одним операндом)");
+        
+        else if((Objects.equals(nums[0], "1") || Objects.equals(nums[0], "2") || Objects.equals(nums[0], "3") || Objects.equals(nums[0], "4")
                 || Objects.equals(nums[0], "5") || Objects.equals(nums[0], "6") || Objects.equals(nums[0], "7") || Objects.equals(nums[0], "8")
                 || Objects.equals(nums[0], "9") || Objects.equals(nums[0], "10"))
         && (Objects.equals(nums[2], "1") || Objects.equals(nums[2], "2") || Objects.equals(nums[2], "3") || Objects.equals(nums[2], "4")
