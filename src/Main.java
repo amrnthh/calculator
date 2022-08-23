@@ -39,6 +39,7 @@ public class Main {
                 int result = i / j;
                 end_result = String.valueOf(result);
             }
+            else throw new Exception ("Неверный операнд");
         }
         else if ((Objects.equals(nums[0], "I") || Objects.equals(nums[0], "II") || Objects.equals(nums[0], "III") || Objects.equals(nums[0], "IV")
                 || Objects.equals(nums[0], "V") || Objects.equals(nums[0], "VI") || Objects.equals(nums[0], "VII") || Objects.equals(nums[0], "VIII")
@@ -148,6 +149,7 @@ public class Main {
                 }
                 else throw new Exception("Результат в римских цифрах не может быть меньше единицы");
             }
+            else throw new Exception ("Неверный операнд");
         }
         else throw new Exception("Неверный формат данных");
 
