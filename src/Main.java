@@ -21,19 +21,19 @@ public class Main {
                 int result = i + j;
                 end_result = String.valueOf(result);
             }
-            if(Objects.equals(nums[1], "-")){
+            else if(Objects.equals(nums[1], "-")){
                 int i=Integer.parseInt(nums[0]);
                 int j=Integer.parseInt(nums[2]);
                 int result = i - j;
                 end_result = String.valueOf(result);
             }
-            if(Objects.equals(nums[1], "*")){
+            else if(Objects.equals(nums[1], "*")){
                 int i=Integer.parseInt(nums[0]);
                 int j=Integer.parseInt(nums[2]);
                 int result = i * j;
                 end_result = String.valueOf(result);
             }
-            if(Objects.equals(nums[1], "/")){
+            else if(Objects.equals(nums[1], "/")){
                 int i=Integer.parseInt(nums[0]);
                 int j=Integer.parseInt(nums[2]);
                 int result = i / j;
@@ -131,18 +131,18 @@ public class Main {
                 int result = p + k;
                 end_result = roman[result - 1];
             }
-            if(Objects.equals(nums[1], "-")){
+            else if(Objects.equals(nums[1], "-")){
                 int result = p - k;
                 if(result >= 1){
                     end_result = roman[result - 1];
                 }
                 else throw new Exception("Результат в римских цифрах не может быть меньше единицы");
             }
-            if(Objects.equals(nums[1], "*")){
+            else if(Objects.equals(nums[1], "*")){
                 int result = p * k;
                 end_result = roman[result - 1];
             }
-            if(Objects.equals(nums[1], "/")){
+            else if(Objects.equals(nums[1], "/")){
                 int result = p / k;
                 if(result >= 1){
                     end_result = roman[result - 1];
